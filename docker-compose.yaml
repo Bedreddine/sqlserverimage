@@ -1,4 +1,10 @@
 version: '3.7'
+
+networks:
+  sql-net:
+    name: sql-net
+    driver: bridge
+
 services:
     sqlserver1:
         build: 
@@ -9,6 +15,8 @@ services:
         env_file:
           - server.env
           - pwd.env
+        networks:
+          - sql-net
 
   #IF you want to persist data uncomment those lines
         #volumes: 
