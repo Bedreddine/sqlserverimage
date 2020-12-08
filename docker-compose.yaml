@@ -6,7 +6,7 @@ networks:
     driver: bridge
 
 services:
-    sqlserver1:
+    sqlserver:
         build: 
           context: .
           dockerfile: dockerfile
