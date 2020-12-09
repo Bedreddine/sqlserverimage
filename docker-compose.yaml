@@ -15,7 +15,6 @@ services:
           - "1433:1433"
         env_file:
           - server.env
-          - pwd.env
         networks:
           - sql-net
 
