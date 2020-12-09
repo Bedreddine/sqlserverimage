@@ -10,7 +10,7 @@ services:
           context: .
           dockerfile: dockerfile
         ports:  
-          - "15789:1433"
+          - "1433:1433"
         env_file:
           - server.env
           - pwd.env
