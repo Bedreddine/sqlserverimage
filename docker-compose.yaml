@@ -7,10 +7,10 @@ networks:
 services:
     sqlserver:
         container_name: sqlserver
-        image: mcr.microsoft.com/mssql/server
-        #build: 
-         # context: .
-         # dockerfile: dockerfile
+        #image: mcr.microsoft.com/mssql/server
+        build: 
+          context: .
+          dockerfile: Dockerfile
         ports:  
           - "1433:1433"
         env_file:
